@@ -1,0 +1,229 @@
+/* font face started here  */
+@font-face {
+    font-family: "font-bold";
+    src: url("../font/Helvetica-Bold.ttf") format("ttf");
+}
+@font-face {
+    font-family: "font-light";
+    src: url("../font/helvetica-light-587ebe5a59211.ttf") format("ttf");
+}
+/* font face end here  */
+
+/* common code started here  */
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+a 
+{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+/* common code end here  */
+
+/* main menu style started here  */
+  .main-menu 
+  {
+      display: flex;
+      justify-content: space-between;
+      height: 120px;
+      align-items: center;
+      background-color: rgba(152, 155, 152, 0.02);
+      padding: 0px 20px;
+  }
+  .logo h1
+  {
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: goldenrod;
+    
+  }
+  .menu-item 
+  {
+      display: flex;
+      transition: .5s;
+  }
+  .menu-item li
+  {
+    margin-left: 20px
+  }
+  .menu-item li a 
+  {
+      color: rgb(0, 0, 0);
+      font-family:font-bold;
+      transition: .2s;
+  }
+  .menu-item li a:hover 
+  {
+      color: rgb(0, 134, 0);
+      
+  }
+  .menu-bar 
+  {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-bar i 
+  {
+      font-size: 30px;
+  }
+/* main menu style end here  */
+/* main section style started here  */
+  /* banner section here  */
+.banner 
+{
+    padding: 100px 20px;
+    text-align: center!important;
+    background-color: rgba(0, 0, 0, 0.048);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+.banner h2 
+{
+    max-width: 750px;
+    margin: 0px auto;
+}
+.banner p 
+{
+    max-width: 750px;
+    margin: 0px auto;
+    text-align: justify;
+}
+
+/* project list section here  */
+
+.project-item 
+{
+    
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid lightgray;
+    margin-top: 35px;
+}
+.project-item:hover 
+{
+    box-shadow: 2px 2px 10px gray;
+}
+.project-item img
+{
+    width: 100%;
+    
+}
+.project-details 
+{
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 10px 20px;
+    
+}
+
+/* about section here  */
+.about-section 
+{
+    background-color: rgba(0, 0, 0, 0.048);
+    padding: 30px 10px;
+    margin-top: 50px;
+}
+ .about-project 
+ {
+   margin-top: 20px;
+ }
+ .about i 
+ {
+     height: 50px;
+     width: 50px;
+     font-size: 25px;
+     margin: 10px 10px;
+     border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 50px;
+    transition: .4s;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.815);
+ }
+
+ .about i:hover 
+ {
+     background-color: rgb(0, 0, 0);
+     color: white;
+ }
+ .project-1
+ {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        /* flex-wrap: wrap; */
+ }
+ .new-project-details p 
+ {
+     text-align: justify;
+ }
+ .project-img img 
+ {
+     width: 80%;
+ }
+ .new-project-details 
+ {
+     font-size: 18px;
+     font-family: font-bold;
+ }
+ .new-project-details h4 
+ {
+     font-size: font-bold;
+ }
+/* main section style end here  */
+/* responsive section started here */
+@media screen and (max-width:766px) 
+{
+    .menu-item 
+    {
+        position: fixed;
+        width: 40%;
+        height: 80vh;
+        right: -300px;
+        top: 120px;
+        flex-direction: column;
+        border-left: 1px solid rgba(0, 0, 0, 0.157);
+        padding: 0px;
+        border-radius: 5px;
+        background-color: rgb(153, 152, 152);
+    }
+    .menu-item li 
+    {
+        margin-top: 10px;
+        width: 50%;
+        text-align: center;
+    }
+   
+    .menu-item li a:hover 
+    {
+        color: goldenrod;
+    }
+    .menu-bar 
+    {
+        display: block;
+    }
+    .separet 
+    {
+        display: none;
+    }
+    .project-1 
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1000px)
+{
+    .project-1 
+    {
+        flex-direction: column;
+    }
+} 
+/* responsive section end here */
